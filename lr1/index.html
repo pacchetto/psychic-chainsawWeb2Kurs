@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <span>Завдання 1</span>
+        <ul id="name-letters"></ul>
+    </div>
+
+    <div>
+        <span>Завдання 2</span>
+        <h4>Введені прізвища та імена:</h4>
+        <div id="name-container"></div>
+    </div>
+
+    <div>
+        <span>Завдання 3</span>
+        <button id="showButton">Показати блоки</button>
+        <div id="letters"></div>
+    </div>
+
+    <script>
+    //Завдання 1
+        const myName = "Саша";
+        const nameList = document.getElementById('name-letters');
+        for(letter of myName){
+            const listItem = document.createElement('li');
+            listItem.textContent = letter;
+
+            listItem.onmouseover = function() {
+                alert(letter);
+            };
+
+            nameList.appendChild(listItem);
+        }
+    //Завдання 2
+        const nameContainer = document.getElementById('name-container');
+        while (true) {
+            const name = prompt("Введіть прізвище та ім'я");
+
+            if (name === null) {
+                break;
+            }
+
+            nameContainer.innerHTML += `<p>${name}</p>`;
+        }
+
+    //Завдання 3
+        const surname = "Danyliuk";
+        const showBlocksBtn = document.getElementById('showButton');
+        const lettersContainer = document.getElementById('letters');
+
+        showButton.addEventListener('click', function(){
+            if(lettersContainer.hasChildNodes()){
+                lettersContainer.innerHTML = ''
+            }
+            else{
+                for(const letter of surname){
+                    const block = document.createElement('div');
+                    block.classList.add('letter-block');
+                    block.textContent = letter;
+
+                    block.addEventListener('mouseover', function() {
+                        alert(`Це літера ${letter}`);
+                    });
+
+                    lettersContainer.appendChild(block);
+                }
+            }
+        })
+    </script>    
+</body>
+</html>

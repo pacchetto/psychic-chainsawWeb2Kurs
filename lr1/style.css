@@ -1,0 +1,21 @@
+#name-letters{
+    width: 150px;
+}
+
+#letters {
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    min-height: 50px;
+}
+
+.letter-block {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 5px;
+}
