@@ -1,0 +1,157 @@
+/* Базові стилі та скидання */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff; /* Фон сторінки */
+    color: #333; /* Колір тексту */
+    font-size: 16px;
+}
+
+ul {
+    list-style: none; /* Списки без маркерів */
+}
+
+/* Контейнер резюме */
+.cv-container {
+    display: flex;
+    max-width: 1000px; /* Максимальна ширина резюме */
+    margin: 10px auto; /* Центрування та відступи зверху/знизу */
+    background-color: #ffffff; /* Білий фон для основної частини */
+    box-shadow: 0 0 15px #b3acac;/* Тінь для об'єму */
+    min-height: 100vh;
+}
+
+/* Ліва колонка (Sidebar) */
+.sidebar {
+    width: 30%; /* Ширина лівої колонки */
+    background-color: #306596;
+    color: #ffffff; /* Білий колір тексту */
+    padding: 30px;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 120px; /* Розмір фото */
+    height: 120px;
+    border-radius: 50%; /* Робимо фото круглим */
+    border: 3px solid #ffffff; /* Біла рамка навколо фото */
+    object-fit: cover; /* Щоб фото не деформувалося */
+}
+
+.sidebar-section {
+    margin-bottom: 25px;
+}
+
+.sidebar-heading {
+    font-size: 16px; /* Розмір заголовків у сайдбарі */
+    border-bottom: 1px solid #ffffff; /* Біла лінія під заголовком */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Великі літери */
+    font-weight: bold;
+}
+
+.sidebar p, .sidebar li {
+    font-size: 16px; /* Розмір тексту в сайдбарі */
+    margin-bottom: 8px;
+}
+
+.sidebar p strong {
+    margin-right: 5px; /* Невеликий відступ після жирного тексту */
+}
+
+.sidebar ul {
+    padding-left: 0; /* Забираємо внутрішній відступ у списку */
+}
+
+/* Права колонка (Основний контент) */
+.main-content {
+    width: 70%; /* Ширина правої колонки */
+    padding: 30px;
+    background-color: #ffffff; /* Білий фон */
+}
+
+.main-section {
+    margin-bottom: 30px;
+}
+.main-section:last-child {
+    margin-bottom: 0;
+}
+
+
+.main-heading {
+    font-size: 1.5em; /* Розмір основних заголовків */
+    color: #2c3e50; /* Колір заголовків */
+    border-bottom: 2px solid #e0e0e0; /* Сіра лінія під заголовком */
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.entry {
+    margin-bottom: 25px; /* Відступ між записами (досвід, освіта) */
+}
+.entry:last-child {
+    margin-bottom: 0;
+}
+
+.entry-header {
+    display: flex; 
+    justify-content: space-between; /* Розносимо елементи по краях */
+    align-items: baseline; /* Вирівнюємо по базовій лінії тексту */
+    margin-bottom: 5px;
+}
+
+.entry-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.entry-dates {
+    font-size: 16px;
+    color: #555;
+    font-style: italic;
+    white-space: nowrap; /* Забороняємо перенос дати */
+    margin-left: 15px; /* Відступ від заголовка */
+}
+
+.entry-company {
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.main-content ul {
+    list-style: disc; /* Стандартні маркери-крапки */
+    padding-left: 20px; /* Внутрішній відступ для маркерів */
+    margin-top: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 1px;
+    background-color: #007bff; /* синя кнопка */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* темніший при наведенні */
+  }
+  
