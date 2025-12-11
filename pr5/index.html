@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Мої завдання</h1>
+
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Додати нове завдання (натисніть Enter)...">
+        </div>
+
+        <div class="filters">
+            <button onclick="setFilter('all')" class="active-filter" id="filter-all">Всі</button>
+            <button onclick="setFilter('active')" id="filter-active">Активні</button>
+            <button onclick="setFilter('completed')" id="filter-completed">Виконані</button>
+        </div>
+
+        <ul id="taskList">
+            </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Стилі для поля вводу */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Щоб padding не ламав ширину */
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Фільтри */
+.filters {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.filters button {
+    background: #e0e0e0;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.filters button:hover {
+    background: #d0d0d0;
+}
+
+.filters button.active-filter {
+    background: #4CAF50;
+    color: white;
+}
+
+/* Список */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s;
+}
+
+li:hover {
+    background-color: #fafafa;
+}
+
+/* Група елементів зліва (чекбокс + текст) */
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+/* Чекбокс */
+.checkbox-custom {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Текст завдання та дата */
+.task-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.task-text {
+    font-size: 16px;
+    color: #333;
+    cursor: text; /* Підказка, що можна редагувати */
+    word-break: break-all;
+}
+
+.task-date {
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+}
+
+/* Стилі для виконаного завдання */
+li.completed .task-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li.completed .task-date {
+    color: #bbb;
+}
+
+li.completed {
+    background-color: #f9f9f9;
+}
+
+/* Кнопка видалення */
+.delete-btn {
+    background: none;
+    border: none;
+    color: #ff4444;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: color 0.2s;
+}
+
+.delete-btn:hover {
+    color: #cc0000;
+}
+
+/* Поле редагування */
+.edit-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+}
