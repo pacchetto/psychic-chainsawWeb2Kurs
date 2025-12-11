@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+section {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-top: 0;
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+}
+
+.clock-display {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: monospace;
+    margin: 15px 0;
+    color: #2c3e50;
+}
+
+.output-box {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-left: 4px solid #6c757d;
+    min-height: 24px;
+    font-family: monospace;
+}
+
+.result-hidden {
+    display: none;
+}
+
+.hint {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+}
+
+.status-msg {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #d35400;
+}

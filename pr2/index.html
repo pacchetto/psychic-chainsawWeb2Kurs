@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Робота з таймерами та датою</h1>
+
+    <section>
+        <h2>Завдання 1 та 2.5: Годинник (форматування часу)</h2>
+        <div class="clock-display" id="clock-display">00:00:00</div>
+        <button onclick="updateTime()">Оновити час (отримати поточний)</button>
+        <p class="hint">Функція додавання "0" (Завдання 1) працює всередині цього годинника.</p>
+    </section>
+
+    <section>
+        <h2>Завдання 3: Ефект друкарської машинки</h2>
+        <input type="text" id="typewriter-input" placeholder="Введіть фразу або залиште пустим">
+        <br><br>
+        <button onclick="startTypewriterInterval()">Запустити (через setInterval)</button>
+        <button onclick="startTypewriterTimeout()">Запустити (через setTimeout)</button>
+        
+        <div id="typewriter-output" class="output-box"></div>
+    </section>
+
+    <section>
+        <h2>Завдання 4: Ставка (Генератор -5 до 5)</h2>
+        <label>
+            Ваша ставка (грн): 
+            <input type="number" id="bet-amount" placeholder="1000">
+        </label>
+        <button onclick="playGame()">Зробити ставку</button>
+        
+        <div id="game-status" class="status-msg"></div>
+        <div id="game-result" class="output-box result-hidden"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
