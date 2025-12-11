@@ -1,0 +1,94 @@
+body { 
+    font-family: sans-serif; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+section { 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    margin-bottom: 30px; 
+    border-radius: 8px; 
+}
+
+h2 { 
+    border-bottom: 2px solid #333; 
+    padding-bottom: 10px; 
+}
+
+/* Стилі для Завдання 1 */
+.temp-input { 
+    margin: 10px 0; 
+    display: block; 
+}
+
+/* Стилі для Завдання 2 та 3 */
+.quiz-container { 
+    margin-top: 10px; 
+}
+
+.result-msg { 
+    font-weight: bold; 
+    margin-top: 10px; 
+}
+
+.error { color: red; }
+.success { color: green; }
+
+[cite_start]/* Стилі для Завдання 4 (Ротатор) [cite: 52] */
+#rotator { 
+    border: 1px solid #999; 
+    padding: 10px; 
+    text-align: center; 
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+.rotator-nav { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 10px 0; 
+}
+
+.rotator-img { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+}
+
+.nav-link { 
+    cursor: pointer; 
+    color: blue; 
+    text-decoration: underline; 
+    user-select: none; 
+}
+
+.nav-link.hidden { 
+    visibility: hidden; 
+}
+
+[cite_start]/* Стилі для Завдання 5 (Капча) [cite: 66] */
+#captcha-display { 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 10px; 
+}
+
+.digit-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 10px); 
+    grid-template-rows: repeat(5, 10px); 
+    gap: 1px; 
+}
+
+.pixel { 
+    width: 10px; 
+    height: 10px; 
+    background-color: #eee; 
+}
+
+.pixel.active { 
+    background-color: #333; 
+}

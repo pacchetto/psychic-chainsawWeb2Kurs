@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №7</title>
+    <link rel="stylesheet" href="/lr5/style.css">
+</head>
+<body>
+
+    <h1>Лабораторна робота №5</h1>
+
+    <section id="task1">
+        <h2>Завдання 1: Температурний конвертер</h2>
+        <p>Введіть значення в будь-яке поле для конвертації.</p>
+        <div class="temp-input">
+            <label>Температура за Фаренгейтом: <input type="number" id="inputF"></label>
+        </div>
+        <div class="temp-input">
+            <label>Температура за Цельсієм: <input type="number" id="inputC"></label>
+        </div>
+    </section>
+
+    <section id="task2">
+        <h2>Завдання 2: Таблиця множення (Текст)</h2>
+        <div id="quiz2-score">Загальний рахунок 0% (0 правильних відповідей з 0)</div>
+        <button onclick="task2NextQuestion()">Наступне завдання</button>
+        
+        <div class="quiz-container" id="quiz2-area" style="display:none;">
+            <span id="quiz2-question"></span>
+            <input type="number" id="quiz2-answer">
+            <button onclick="task2Check()">Перевірити</button>
+            <div id="quiz2-result" class="result-msg"></div>
+        </div>
+    </section>
+
+    <section id="task3">
+        <h2>Завдання 3: Таблиця множення (Радіокнопки)</h2>
+        <div id="quiz3-score">Загальний рахунок 0% (0 правильних відповідей з 0)</div>
+        <button onclick="task3NextQuestion()">Наступне завдання</button>
+        
+        <div class="quiz-container" id="quiz3-area" style="display:none;">
+            <div id="quiz3-question" style="font-weight:bold; margin-bottom:10px;"></div>
+            <div id="quiz3-options"></div>
+            <div id="quiz3-result" class="result-msg"></div>
+        </div>
+    </section>
+
+    <section id="task4">
+        <h2>Завдання 4: Ротатор зображень</h2>
+        <div id="rotator-container"></div>
+    </section>
+
+    <section id="task5">
+        <h2>Завдання 5: Captcha</h2>
+        <div id="captcha-display"></div>
+        <button onclick="initCaptcha(3)">Оновити капчу</button>
+        <br><br>
+        <label>Введіть число: <input type="text" id="captcha-input"></label>
+        <button onclick="checkCaptcha()">Перевірити</button>
+        <div id="captcha-result" class="result-msg"></div>
+    </section>
+
+    <script src="/lr5/script.js"></script>
+</body>
+</html>
