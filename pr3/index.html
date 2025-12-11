@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Робота з об'єктом Date</h1>
+
+    <section>
+        <h2>Завдання 1: Створення дати</h2>
+        <p>Створено дату: 20 лютого 2021, 3:12 ранку.</p>
+        <div id="task1-result" class="output-box"></div>
+    </section>
+
+    <section>
+        <h2>Завдання 2: День тижня (getWeekDay)</h2>
+        <p>Поточна дата: <span id="task2-date"></span></p>
+        <div id="task2-result" class="output-box"></div>
+    </section>
+
+    <section>
+        <h2>Завдання 3: Останній день місяця</h2>
+        <p>Перевірка для лютого 2020 (високосний) та лютого 2021 (звичайний):</p>
+        <div id="task3-result" class="output-box"></div>
+    </section>
+
+    <section>
+        <h2>Завдання 4: Секунди до завтра</h2>
+        <p>Кількість секунд від поточного моменту до 00:00 завтрашнього дня:</p>
+        <div id="task4-result" class="output-box"></div>
+        <button onclick="updateSeconds()">Оновити</button>
+    </section>
+
+    <section>
+        <h2>Завдання 5: Форматування дати (formatDate)</h2>
+        <p>Демонстрація роботи на різних прикладах:</p>
+        <div id="task5-result" class="output-box"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
