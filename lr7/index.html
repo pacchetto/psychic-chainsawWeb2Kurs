@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота: Promises</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Робота з Promise</h1>
+
+        <section>
+            <h2>Завдання 4: Порівняння чисел (compareNumbers)</h2>
+            <p>Введіть два числа. Через 1 секунду з'явиться результат.</p>
+            
+            <div class="input-group">
+                <input type="number" id="num1" placeholder="Число 1">
+                <input type="number" id="num2" placeholder="Число 2">
+            </div>
+            
+            <button onclick="runTask4()">Порівняти числа</button>
+            
+            <div id="task4-result" class="output-box">Очікування вводу...</div>
+        </section>
+
+        <section>
+            <h2>Завдання 5: Promise.all (Сума випадкових чисел)</h2>
+            <p>Запускає 3 таймери (1с, 2с, 3с). Після завершення всіх виводиться сума.</p>
+            
+            <button onclick="runTask5()">Запустити Promise.all</button>
+            
+            <div class="status-log" id="task5-log"></div>
+            
+            <div id="result" class="output-box result-sum">Сума з'явиться тут</div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
